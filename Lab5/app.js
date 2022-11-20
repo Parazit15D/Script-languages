@@ -17,7 +17,7 @@ const options = {
     useFindAndModify: false
 }
 
-const url = mongodb://${MONGO_DB_HOSTNAME}:${MONGO_DB_PORT}/${MONGO_DB};
+const url = `mongodb://${MONGO_DB_HOSTNAME}:${MONGO_DB_PORT}/${MONGO_DB}`;
 
 
 const userScheme = new Schema({ name: String, surname: String, group: String }, { versionKey: false });
